@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media-queries</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <img src="src/header-bg.jpg" alt="background pic" /> -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand">Start Bootstrap</a>
+            <button class="menuBtn">Menu</button>
+            <div class="navbar-link">
+                <ul class="navbar-items">
+                    <li class="nav-item">SERVICES</li>
+                    <li class="nav-item">PROTFOLIO</li>
+                    <li class="nav-item">ABOUT</li>
+                    <li class="nav-item">TEAM</li>
+                    <li class="nav-item">CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-body">
+        <div class="welcome-txt">Welcome to our studio</div>
+        <div class="meet-txt">It's nice to meet you</div>
+        <button class="moreBtn">Tell me more</button>
+    </div>
+    <script>
+        const menuBtn = document.getElementsByClassName('menuBtn')[0];
+        const menuList = document.getElementsByClassName('navbar-items')[0];
+        console.log(document.getElementsByClassName('menuBtn'))
+        console.log(menuBtn.classList)
+        function toggleMenu(e) {
+            if (menuList.classList.contains('menuList')) {
+                menuList.classList.remove('menuList')
+            } else {
+                menuList.classList.add('menuList')
+            }
+            console.log(e)
+        }
+        menuBtn.onclick = toggleMenu;
+
+        // menuList.onclick()
+
+    </script>
+</body>
+
+</html>
+
+<!-- <script>
+    const elem = document.getElementsByClassName('animate')[0];
+    console.log(elem);
+    console.log(elem.classList)
+
+    function toggleAnimation() {
+        if (elem.classList.contains('add-animation')) {
+            elem.classList.remove('add-animation');
+        } else {
+            elem.classList.add('add-animation');
+        }
+    }
+    elem.onclick = toggleAnimation;
+
+</script> -->

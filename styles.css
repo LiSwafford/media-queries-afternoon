@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-image: url("./src/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar {
+  width: 100%;
+  min-height: 8vh;
+  z-index: 1030;
+  position: fixed;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar-brand {
+  margin-top: 50px;
+  color: #fed136;
+  font-family: "kaushan Script", cursive;
+  font-size: 1.75em;
+}
+
+.menuBtn {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #fed136;
+  padding: 13px;
+  border-radius: 2px;
+  float: right;
+  display: none;
+}
+.navbar-items {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+}
+.main-body {
+  padding-top: 300px;
+  padding-bottom: 200px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.welcome-txt {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.meet-txt {
+  font-size: 70px;
+  padding-bottom: 20px;
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+.moreBtn {
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #fed136;
+  border: #fed136 solid;
+  padding: 20px 40px;
+  border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+  .navbar-items {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .navbar-items {
+    float: left;
+    width: 100%;
+    /* clear: both; */
+    display: none;
+    flex-direction: column;
+  }
+  .navbar-items.menuList {
+    display: flex;
+  }
+  .nav-item {
+    width: 100%;
+    display: block;
+    padding-bottom: 3vh;
+  }
+  .navbar {
+    width: 100%;
+    background-color: black;
+  }
+}
+
+/* @media(){
+    body {
+        background-image: url("./src/header-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+} */
